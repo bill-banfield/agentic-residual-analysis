@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMI Management - Equipment Lease Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'ami-red': '#FF4444',
+                        'ami-red-light': '#FF6666',
+                        'ami-red-dark': '#CC2222'
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        };
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-white font-inter min-h-screen">
+    
+    <!-- Header -->
+    <header class="bg-white shadow-sm border-b border-gray-200">
+        <div class="max-w-4xl mx-auto px-4 py-6">
+            <div class="flex items-center justify-center">
+                <img src="attached_assets/AMI Logo_1752769404195.png" alt="AMI Management Logo" class="h-12 w-auto">
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 py-8">
+        <div class="bg-white rounded-lg shadow-lg border border-gray-200 overflow-hidden">
+            <!-- Form Header -->
+            <div class="bg-ami-red px-6 py-4">
+                <h1 class="text-2xl font-bold text-white">Equipment Lease Information Form</h1>
+                <p class="text-white/90 mt-1">Please fill out all required fields below</p>
+            </div>
+
+            <!-- Form Content -->
+            <div class="p-6">
+                <form id="leaseForm" class="space-y-6">
+                    <!-- @COMPONENT: FormSection [Basic Information] -->
+                    <div class="border-b border-gray-200 pb-6">
+                        <h2 class="text-lg font-semibold text-black mb-4">Basic Information</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label for="lesseeName" class="block text-sm font-medium text-black mb-1">Lessee Name *</label>
+                                <input 
+                                    type="text" 
+                                    id="lesseeName" 
+                                    name="lesseeName" 
+                                    required 
+                                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-ami-red focus:border-ami-red transition-colors"
+                                    placeholder="Enter lessee name"
+                                    data-bind="formData.lesseeName"
+                                >
+                            </div>
+                            <div>
+                                <label for="source" class="block text-sm font-medium text-black mb-1">Source *</label>
+                                <input 
+                                    type="text" 
+                                    id="source" 
+                                    name="source" 
+                                    required 
+                                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-ami-red focus:border-ami-red transition-colors"
+                                    placeholder="Enter source"
+                                    data-bind="formData.source"
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <!-- @END_COMPONENT: FormSection -->
+
+                    <!-- @COMPONENT: FormSection [Equipment Details] -->
+                    <div class="border-b border-gray-200 pb-6">
+                        <h2 class="text-lg font-semibold text-black mb-4">Equipment Details</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label for="itemName" class="block text-sm font-medium text-black mb-1">Item Name *</label>
+                                <input 
+                                    type="text" 
+                                    id="itemName" 
+                                    name="itemName" 
+                                    required 
+                                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-ami-red focus:border-ami-red transition-colors"
+                                    placeholder="Enter item name"
+                                    data-bind="formData.itemName"
+                                >
+                            </div>
+                            <div>
+                                <label for="make" class="block text-sm font-medium text-black mb-1">Make *</label>
+                                <input 
+                                    type="text" 
+                                    id="make" 
+                                    name="make" 
+                                    required 
+                                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-ami-red focus:border-ami-red transition-colors"
+                                    placeholder="Enter make"
+                                    data-bind="formData.make"
+                                >
+                            </div>
+                            <div>
+                                <label for="model" class="block text-sm font-medium text-black mb-1">Model *</label>
+                                <input 
+                                    type="text" 
+                                    id="model" 
+                                    name="model" 
+                                    required 
+                                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-ami-red focus:border-ami-red transition-colors"
+                                    placeholder="Enter model"
+                                    data-bind="formData.model"
+                                >
+                            </div>
+                            <div>
+                                <label for="assetType" class="block text-sm font-medium text-black mb-1">Asset Type *</label>
+                                <select 
+                                    id="assetType" 
+                                    name="assetType" 
+                                    required 
+                                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-ami-red focus:border-ami-red transition-colors"
+                                    data-bind="formData.assetType"
+                                >
+                                    <option value="">Select asset type</option>
+                                    <option value="heavy-equipment">Heavy Equipment</option>
+                                    <option value="construction">Construction Equipment</option>
+                                    <option value="agricultural">Agricultural Equipment</option>
+                                    <option value="transportation">Transportation</option>
+                                    <option value="industrial">Industrial Equipment</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <label for="itemDescription" class="block text-sm font-medium text-black mb-1">Item Description</label>
+                            <textarea 
+                                id="itemDescription" 
+                                name="itemDescription" 
+                                rows="3" 
+                                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-ami-red focus:border-ami-red transition-colors"
+                                placeholder="Enter detailed item description"
+                                data-bind="formData.itemDescription"
+                            ></textarea>
+                        </div>
+                    </div>
+                    <!-- @END_COMPONENT: FormSection -->
+
+                    <!-- @COMPONENT: FormSection [Meter Information] -->
+                    <div class="border-b border-gray-200 pb-6">
+                        <h2 class="text-lg font-semibold text-black mb-4">Meter Information</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <div>
+                                <label for="currentMeter" class="block text-sm font-medium text-black mb-1">Current Meter *</label>
+                                <input 
+                                    type="number" 
+                                    id="currentMeter" 
+                                    name="currentMeter" 
+                                    required 
+                                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-ami-red focus:border-ami-red transition-colors"
+                                    placeholder="Enter current meter reading"
+                                    data-bind="formData.currentMeter"
+                                >
+                            </div>
+                            <div>
+                                <label for="proposedMeter" class="block text-sm font-medium text-black mb-1">Proposed Meter *</label>
+                                <input 
+                                    type="number" 
+                                    id="proposedMeter" 
+                                    name="proposedMeter" 
+                                    required 
+                                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-ami-red focus:border-ami-red transition-colors"
+                                    placeholder="Enter proposed meter reading"
+                                    data-bind="formData.proposedMeter"
+                                >
+                            </div>
+                            <div>
+                                <label for="meterUnit" class="block text-sm font-medium text-black mb-1">Meter Unit *</label>
+                                <select 
+                                    id="meterUnit" 
+                                    name="meterUnit" 
+                                    required 
+                                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-ami-red focus:border-ami-red transition-colors"
+                                    data-bind="formData.meterUnit"
+                                >
+                                    <option value="">Select unit</option>
+                                    <option value="hours">Hours</option>
+                                    <option value="miles">Miles</option>
+                                    <option value="kilometers">Kilometers</option>
+                                    <option value="cycles">Cycles</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- @END_COMPONENT: FormSection -->
+
+                    <!-- @COMPONENT: FormSection [Financial Information] -->
+                    <div class="border-b border-gray-200 pb-6">
+                        <h2 class="text-lg font-semibold text-black mb-4">Financial Information</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label for="subjectPrice" class="block text-sm font-medium text-black mb-1">Subject Price *</label>
+                                <div class="relative">
+                                    <span class="absolute left-3 top-2 text-gray-500">$</span>
+                                    <input 
+                                        type="number" 
+                                        id="subjectPrice" 
+                                        name="subjectPrice" 
+                                        required 
+                                        step="0.01" 
+                                        class="w-full pl-8 pr-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-ami-red focus:border-ami-red transition-colors"
+                                        placeholder="0.00"
+                                        data-bind="formData.subjectPrice"
+                                    >
+                                </div>
+                            </div>
+                            <div>
+                                <label for="amiAverage" class="block text-sm font-medium text-black mb-1">AMI Average *</label>
+                                <div class="relative">
+                                    <span class="absolute left-3 top-2 text-gray-500">$</span>
+                                    <input 
+                                        type="number" 
+                                        id="amiAverage" 
+                                        name="amiAverage" 
+                                        required 
+                                        step="0.01" 
+                                        class="w-full pl-8 pr-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-ami-red focus:border-ami-red transition-colors"
+                                        placeholder="0.00"
+                                        data-bind="formData.amiAverage"
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- @END_COMPONENT: FormSection -->
+
+                    <!-- @COMPONENT: FormSection [Business Information] -->
+                    <div class="border-b border-gray-200 pb-6">
+                        <h2 class="text-lg font-semibold text-black mb-4">Business Information</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label for="industry" class="block text-sm font-medium text-black mb-1">Industry *</label>
+                                <select 
+                                    id="industry" 
+                                    name="industry" 
+                                    required 
+                                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-ami-red focus:border-ami-red transition-colors"
+                                    data-bind="formData.industry"
+                                >
+                                    <option value="">Select industry</option>
+                                    <option value="construction">Construction</option>
+                                    <option value="agriculture">Agriculture</option>
+                                    <option value="transportation">Transportation</option>
+                                    <option value="manufacturing">Manufacturing</option>
+                                    <option value="mining">Mining</option>
+                                    <option value="forestry">Forestry</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="status" class="block text-sm font-medium text-black mb-1">Status *</label>
+                                <select 
+                                    id="status" 
+                                    name="status" 
+                                    required 
+                                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-ami-red focus:border-ami-red transition-colors"
+                                    data-bind="formData.status"
+                                >
+                                    <option value="">Select status</option>
+                                    <option value="active">Active</option>
+                                    <option value="pending">Pending</option>
+                                    <option value="expired">Expired</option>
+                                    <option value="cancelled">Cancelled</option>
+                                    <option value="under-review">Under Review</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- @END_COMPONENT: FormSection -->
+
+                    <!-- @COMPONENT: FormSection [Lease Terms] -->
+                    <div class="pb-6">
+                        <h2 class="text-lg font-semibold text-black mb-4">Lease Terms</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <div>
+                                <label for="application" class="block text-sm font-medium text-black mb-1">Application *</label>
+                                <input 
+                                    type="text" 
+                                    id="application" 
+                                    name="application" 
+                                    required 
+                                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-ami-red focus:border-ami-red transition-colors"
+                                    placeholder="Enter application"
+                                    data-bind="formData.application"
+                                >
+                            </div>
+                            <div>
+                                <label for="structure" class="block text-sm font-medium text-black mb-1">Structure *</label>
+                                <select 
+                                    id="structure" 
+                                    name="structure" 
+                                    required 
+                                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-ami-red focus:border-ami-red transition-colors"
+                                    data-bind="formData.structure"
+                                >
+                                    <option value="">Select structure</option>
+                                    <option value="operating-lease">Operating Lease</option>
+                                    <option value="capital-lease">Capital Lease</option>
+                                    <option value="finance-lease">Finance Lease</option>
+                                    <option value="rental">Rental</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="termMonths" class="block text-sm font-medium text-black mb-1">Term in Months *</label>
+                                <input 
+                                    type="number" 
+                                    id="termMonths" 
+                                    name="termMonths" 
+                                    required 
+                                    min="1" 
+                                    max="240" 
+                                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-ami-red focus:border-ami-red transition-colors"
+                                    placeholder="Enter term in months"
+                                    data-bind="formData.termMonths"
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <!-- @END_COMPONENT: FormSection -->
+
+                    <!-- Submit Button -->
+                    <div class="flex justify-end pt-6 border-t border-gray-200">
+                        <button 
+                            type="submit" 
+                            id="submitBtn"
+                            class="bg-ami-red hover:bg-ami-red-dark text-white font-medium py-3 px-8 rounded-md transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-ami-red focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed flex items-center"
+                            data-event="click:handleSubmit"
+                            data-implementation="Should validate form and submit to n8n webhook"
+                        >
+                            <i class="fas fa-paper-plane mr-2"></i>
+                            <span id="submitText">Submit Form</span>
+                            <i class="fas fa-spinner fa-spin ml-2 hidden" id="loadingSpinner"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-50">
+        <div class="bg-white rounded-lg p-6 max-w-md mx-4">
+            <div class="text-center">
+                <i class="fas fa-check-circle text-green-500 text-5xl mb-4"></i>
+                <h3 class="text-xl font-semibold text-black mb-2">Success!</h3>
+                <p class="text-gray-600 mb-4">Your form has been submitted successfully.</p>
+                <button 
+                    onclick="closeSuccessModal()" 
+                    class="bg-ami-red hover:bg-ami-red-dark text-white px-6 py-2 rounded-md transition-colors"
+                >
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Error Modal -->
+    <div id="errorModal" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-50">
+        <div class="bg-white rounded-lg p-6 max-w-md mx-4">
+            <div class="text-center">
+                <i class="fas fa-exclamation-triangle text-red-500 text-5xl mb-4"></i>
+                <h3 class="text-xl font-semibold text-black mb-2">Error</h3>
+                <p class="text-gray-600 mb-4" id="errorMessage">An error occurred while submitting the form.</p>
+                <button 
+                    onclick="closeErrorModal()" 
+                    class="bg-ami-red hover:bg-ami-red-dark text-white px-6 py-2 rounded-md transition-colors"
+                >
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Form submission handler
+        (function() {
+            const form = document.getElementById('leaseForm');
+            const submitBtn = document.getElementById('submitBtn');
+            const submitText = document.getElementById('submitText');
+            const loadingSpinner = document.getElementById('loadingSpinner');
+            const successModal = document.getElementById('successModal');
+            const errorModal = document.getElementById('errorModal');
+            const errorMessage = document.getElementById('errorMessage');
+
+            // @STATE: isSubmitting:boolean = false
+            let isSubmitting = false;
+
+            form.addEventListener('submit', async function(e) {
+                e.preventDefault();
+                
+                if (isSubmitting) return;
+                
+                // Validate form
+                if (!form.checkValidity()) {
+                    form.reportValidity();
+                    return;
+                }
+
+                isSubmitting = true;
+                setLoadingState(true);
+
+                // Collect form data
+                const formData = new FormData(form);
+                const data = {};
+                for (let [key, value] of formData.entries()) {
+                    data[key] = value;
+                }
+
+                // Create query string for GET request
+                const queryString = new URLSearchParams(data).toString();
+                const webhookUrl = `https://endlessformsinfo.app.n8n.cloud/webhook-test/5214914c-a4c0-48ac-8026-19e8226179eb?${queryString}`;
+
+                try {
+                    // TODO: Implement proper error handling and response validation
+                    const response = await fetch(webhookUrl, {
+                        method: 'GET',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        }
+                    });
+
+                    if (response.ok) {
+                        showSuccessModal();
+                        form.reset();
+                    } else {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                } catch (error) {
+                    console.error('Submission error:', error);
+                    showErrorModal(error.message);
+                } finally {
+                    isSubmitting = false;
+                    setLoadingState(false);
+                }
+            });
+
+            function setLoadingState(loading) {
+                if (loading) {
+                    submitBtn.disabled = true;
+                    submitText.textContent = 'Submitting...';
+                    loadingSpinner.classList.remove('hidden');
+                } else {
+                    submitBtn.disabled = false;
+                    submitText.textContent = 'Submit Form';
+                    loadingSpinner.classList.add('hidden');
+                }
+            }
+
+            function showSuccessModal() {
+                successModal.classList.remove('hidden');
+                successModal.classList.add('flex');
+            }
+
+            function showErrorModal(message) {
+                errorMessage.textContent = message || 'An error occurred while submitting the form.';
+                errorModal.classList.remove('hidden');
+                errorModal.classList.add('flex');
+            }
+
+            // Make functions globally available for modal close buttons
+            window.closeSuccessModal = function() {
+                successModal.classList.add('hidden');
+                successModal.classList.remove('flex');
+            };
+
+            window.closeErrorModal = function() {
+                errorModal.classList.add('hidden');
+                errorModal.classList.remove('flex');
+            };
+
+            // Close modals when clicking outside
+            [successModal, errorModal].forEach(modal => {
+                modal.addEventListener('click', function(e) {
+                    if (e.target === modal) {
+                        modal.classList.add('hidden');
+                        modal.classList.remove('flex');
+                    }
+                });
+            });
+        })();
+    </script>
+</body>
+</html>

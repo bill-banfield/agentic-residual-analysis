@@ -1,0 +1,177 @@
+"depreciation_analysis": {
+      "description": "MACRS depreciation schedules and financial projections",
+      "data": {
+        "equipment_analysis": {
+          "equipment_name": "2025 Volvo A30G Articulating Dump",
+          "initial_cost": 507750,
+          "useful_life": 8,
+          "salvage_value": 101550,
+          "macrs_class": "5-year",
+          "description": "Equipment analysis"
+        },
+        "depreciation_calculations": {
+          "years": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "straight_line": [
+            507750,
+            457025,
+            406300,
+            355575,
+            304850,
+            254125,
+            203400,
+            152675,
+            101950,
+            101550,
+            101550
+          ],
+          "double_declining": [
+            507750,
+            381563,
+            286172,
+            214629,
+            160972,
+            120729,
+            90547,
+            101550,
+            101550,
+            101550,
+            101550
+          ],
+          "sum_of_years_digits": [
+            507750,
+            416488,
+            334563,
+            261975,
+            198725,
+            144813,
+            100238,
+            101550,
+            101550,
+            101550,
+            101550
+          ],
+          "macrs": [
+            507750,
+            406200,
+            243840,
+            146304,
+            87782,
+            87782,
+            43891,
+            43891,
+            43891,
+            43891,
+            43891
+          ]
+        },
+        "chart_config": {
+          "type": "line",
+          "data": {
+            "labels": [
+              "Year 0",
+              "Year 1",
+              "Year 2",
+              "Year 3",
+              "Year 4",
+              "Year 5",
+              "Year 6",
+              "Year 7",
+              "Year 8",
+              "Year 9",
+              "Year 10"
+            ],
+            "datasets": [
+              {
+                "label": "Straight-Line Method",
+                "data": [
+                  507750,
+                  457025,
+                  406300,
+                  355575,
+                  304850,
+                  254125,
+                  203400,
+                  152675,
+                  101950,
+                  101550,
+                  101550
+                ],
+                "borderColor": "#2563eb",
+                "backgroundColor": "rgba(37, 99, 235, 0.1)",
+                "borderWidth": 3,
+                "fill": false
+              },
+              {
+                "label": "Double Declining Balance",
+                "data": [
+                  507750,
+                  381563,
+                  286172,
+                  214629,
+                  160972,
+                  120729,
+                  90547,
+                  101550,
+                  101550,
+                  101550,
+                  101550
+                ],
+                "borderColor": "#dc2626",
+                "backgroundColor": "rgba(220, 38, 38, 0.1)",
+                "borderWidth": 3,
+                "fill": false
+              },
+              {
+                "label": "Sum-of-Years-Digits",
+                "data": [
+                  507750,
+                  416488,
+                  334563,
+                  261975,
+                  198725,
+                  144813,
+                  100238,
+                  101550,
+                  101550,
+                  101550,
+                  101550
+                ],
+                "borderColor": "#16a34a",
+                "backgroundColor": "rgba(22, 163, 74, 0.1)",
+                "borderWidth": 3,
+                "fill": false
+              },
+              {
+                "label": "MACRS",
+                "data": [
+                  507750,
+                  406200,
+                  243840,
+                  146304,
+                  87782,
+                  87782,
+                  43891,
+                  43891,
+                  43891,
+                  43891,
+                  43891
+                ],
+                "borderColor": "#ca8a04",
+                "backgroundColor": "rgba(202, 138, 4, 0.1)",
+                "borderWidth": 3,
+                "fill": false
+              }
+            ]
+          },

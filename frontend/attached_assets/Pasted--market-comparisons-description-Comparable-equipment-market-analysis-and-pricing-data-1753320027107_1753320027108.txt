@@ -1,0 +1,131 @@
+"market_comparisons": {
+      "description": "Comparable equipment market analysis and pricing data",
+      "data": [
+        {
+          "market_comps": [
+            {
+              "item_description": "2023 VOLVO A30G Off-Highway Trucks",
+              "year": "2023",
+              "hours": "1,700",
+              "serial_number": "VCE0A30GV00753450",
+              "dealer": "Alta Equipment Co.",
+              "seller_location": "Orlando, Florida 32824",
+              "phone": "+1 813-816-7060",
+              "price": "USD $382,500",
+              "url_to_listing": "https://www.machinerytrader.com/listing/for-sale/242798763/2023-volvo-a30g-off-highway-trucks"
+            },
+            {
+              "item_description": "2023 VOLVO A30G Off-Highway Trucks",
+              "year": "2023",
+              "hours": "1,500",
+              "serial_number": "VCE0A30GH00753601",
+              "dealer": "Alta Equipment Co.",
+              "seller_location": "Batavia, New York 14020",
+              "phone": "(248) 430-9007",
+              "price": "USD $373,000",
+              "url_to_listing": "https://www.machinerytrader.com/listing/for-sale/242717543/2023-volvo-a30g-off-highway-trucks"
+            },
+            {
+              "item_description": "2022 VOLVO A30G Off-Highway Trucks",
+              "year": "2022",
+              "hours": "2,464",
+              "serial_number": "A30GV752687",
+              "dealer": "Ascendum Machinery Inc.",
+              "seller_location": "Huntersville, North Carolina 28078",
+              "phone": "(704) 659-3306",
+              "price": "USD $352,000",
+              "url_to_listing": "https://www.machinerytrader.com/listing/for-sale/239856613/2022-volvo-a30g-off-highway-trucks"
+            },
+            {
+              "item_description": "2022 VOLVO A30G Off-Highway Trucks",
+              "year": "2022",
+              "hours": "2,635",
+              "serial_number": "A30GV752971",
+              "dealer": "Ascendum Machinery Inc.",
+              "seller_location": "Huntersville, North Carolina 28078",
+              "phone": "(704) 659-3306",
+              "price": "USD $344,000",
+              "url_to_listing": "https://www.machinerytrader.com/listing/for-sale/246243207/2022-volvo-a30g-off-highway-trucks"
+            },
+            {
+              "item_description": "2022 VOLVO A30G Off-Highway Trucks",
+              "year": "2022",
+              "hours": "2,816",
+              "serial_number": "A30GV752963",
+              "dealer": "Ascendum Machinery Inc.",
+              "seller_location": "Huntersville, North Carolina 28078",
+              "phone": "(704) 659-3306",
+              "price": "USD $335,000",
+              "url_to_listing": "https://www.machinerytrader.com/listing/for-sale/244556363/2022-volvo-a30g-off-highway-trucks"
+            },
+            {
+              "item_description": "2022 VOLVO A30G Off-Highway Trucks",
+              "year": "2022",
+              "hours": "2,899",
+              "serial_number": "A30GV752930",
+              "dealer": "Ascendum Machinery Inc.",
+              "seller_location": "Huntersville, North Carolina 28078",
+              "phone": "(704) 659-3306",
+              "price": "USD $332,000",
+              "url_to_listing": "https://www.machinerytrader.com/listing/for-sale/246242975/2022-volvo-a30g-off-highway-trucks"
+            },
+            {
+              "item_description": "2022 VOLVO A30G Off-Highway Trucks",
+              "year": "2022",
+              "hours": "2,000",
+              "serial_number": "VCE0A30GH00753047",
+              "dealer": "Alta Equipment Co.",
+              "seller_location": "Latham, New York 12110",
+              "phone": "(248) 430-9007",
+              "price": "USD $332,000",
+              "url_to_listing": "https://www.machinerytrader.com/listing/for-sale/242718813/2022-volvo-a30g-off-highway-trucks"
+            },
+            {
+              "item_description": "2022 VOLVO A30G Truck Water Equipment",
+              "year": "2022",
+              "hours": "3,683",
+              "serial_number": "A30GV752596",
+              "dealer": "Ascendum Machinery Inc.",
+              "seller_location": "Huntersville, North Carolina 28078",
+              "phone": "(704) 659-3306",
+              "price": "USD $295,000",
+              "url_to_listing": "https://www.machinerytrader.com/listing/for-sale/233826449/2022-volvo-a30g-truck-water-equipment"
+            },
+            {
+              "item_description": "2021 VOLVO A30G Off-Highway Trucks",
+              "year": "2021",
+              "hours": "2,809",
+              "serial_number": "A30GV752922",
+              "dealer": "Ascendum Machinery Inc.",
+              "seller_location": "Huntersville, North Carolina 28078",
+              "phone": "(704) 659-3306",
+              "price": "USD $336,000",
+              "url_to_listing": "https://www.machinerytrader.com/listing/for-sale/241331987/2021-volvo-a30g-off-highway-trucks"
+            },
+            {
+              "item_description": "2021 VOLVO A30G Off-Highway Trucks",
+              "year": "2021",
+              "hours": "4,005",
+              "serial_number": "A30GV752490",
+              "dealer": "Ascendum Machinery Inc.",
+              "seller_location": "Huntersville, North Carolina 28078",
+              "phone": "(704) 659-3306",
+              "price": "USD $274,000",
+              "url_to_listing": "https://www.machinerytrader.com/listing/for-sale/246242265/2021-volvo-a30g-off-highway-trucks"
+            },
+            {
+              "item_description": "2021 VOLVO A30G Off-Highway Trucks",
+              "year": "2021",
+              "hours": "4,063",
+              "serial_number": "A30GV752176",
+              "dealer": "Ascendum Machinery Inc.",
+              "seller_location": "Huntersville, North Carolina 28078",
+              "phone": "(704) 659-3306",
+              "price": "USD $272,000",
+              "url_to_listing": "https://www.machinerytrader.com/listing/for-sale/241331599/2021-volvo-a30g-off-highway-trucks"
+            }
+          ],
+          "total_items": 11
+        }
+      ]
+    },

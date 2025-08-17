@@ -1,0 +1,33 @@
+{
+  "version": "1.0",
+  "frontend": {
+    "framework": "React",
+    "nodeVersion": "18",
+    "buildCommand": "npm run build",
+    "outputDirectory": "dist/public",
+    "environmentVariables": {
+      "NODE_ENV": "production"
+    }
+  },
+  "backend": {
+    "framework": "Express",
+    "nodeVersion": "18",
+    "buildCommand": "npm run build",
+    "startCommand": "npm start",
+    "environmentVariables": {
+      "NODE_ENV": "production",
+      "PORT": "3000"
+    }
+  },
+  "database": {
+    "type": "PostgreSQL",
+    "required": true,
+    "connectionVariable": "DATABASE_URL"
+  },
+  "cache": {
+    "type": "Redis",
+    "required": false,
+    "connectionVariable": "REDIS_URL",
+    "fallback": "in-memory"
+  }
+}

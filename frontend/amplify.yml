@@ -1,0 +1,29 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - npm ci
+    build:
+      commands:
+        - echo "=== AWS AMPLIFY LIMITATION DETECTED ==="
+        - echo "Amplify does not support Node.js backend servers"
+        - echo "Building static frontend only - API endpoints will not work"
+        - echo "Consider deploying to Vercel, Railway, or Render instead"
+        - export NODE_ENV=production
+        - export AWS_BUILD=true
+        - export DATABASE_URL="${DATABASE_URL:-postgresql://placeholder:placeholder@localhost:5432/placeholder}"
+        - npm run build
+        - echo "Creating API endpoints notice page..."
+        - mkdir -p dist/public/api
+        - echo '<!DOCTYPE html><html><head><title>API Not Available</title></head><body><h1>Backend API Not Available on Amplify</h1><p>This application requires a Node.js backend server which AWS Amplify does not support.</p><p>Please deploy to a platform that supports full-stack Node.js applications:</p><ul><li>Vercel</li><li>Railway</li><li>Render</li><li>Heroku</li></ul><p>Or convert to serverless Lambda functions for AWS.</p></body></html>' > dist/public/api/index.html
+        - echo "Build artifacts created:"
+        - ls -la dist/
+        - ls -la dist/public/
+  artifacts:
+    baseDirectory: dist/public
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*
