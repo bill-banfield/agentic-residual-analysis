@@ -2,6 +2,11 @@
 
 A sophisticated n8n workflow system that leverages multiple AI agents powered by Anthropic Claude Sonnet 4.0 to perform comprehensive equipment residual value analysis. This backend processes equipment data through webhooks and orchestrates various specialized agents to deliver detailed financial analysis and market insights.
 
+## 📊 Main Workflow Overview
+
+### ![Backend 1](../images/backend_1.png)
+**Complete n8n Workflow Canvas** - Full view of the entire agentic residual analysis system showing the orchestration of multiple AI agents, data processing nodes, and integration points. Features the main workflow structure with webhook input, agent processing, and response generation pathways. This comprehensive workflow coordinates all aspects of equipment residual value analysis from data collection through final report generation.
+
 ## 🏗️ System Architecture
 
 The backend consists of a complex n8n workflow that coordinates multiple AI agents to analyze equipment residual values:
@@ -98,9 +103,6 @@ The workflow includes several key sections:
 - **Data Storage**: Google Sheets integration for persistence
 
 ## 📊 Workflow Screenshots
-
-### ![Backend 1](../images/backend_1.png)
-**Main Workflow Overview** - Complete n8n workflow canvas showing the entire agentic residual analysis system. Displays the orchestration of multiple AI agents, data processing nodes, and integration points. Features the main workflow structure with webhook input, agent processing, and response generation pathways.
 
 ### ![Backend 2](../images/backend_2.png)
 **AI Agent Configuration** - Detailed view of the Anthropic Claude Sonnet 4.0 agent setup and configuration. Shows the Market Value Agent and Executive Summary Agent configurations with their specialized prompts and processing parameters. Includes agent retry logic and error handling settings.

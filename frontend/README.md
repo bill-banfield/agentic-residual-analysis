@@ -2,6 +2,17 @@
 
 A professional equipment residual value analysis platform built for Asset Management International (AMI). This application provides comprehensive AI-driven analytics for equipment valuation, depreciation modeling, and financial analysis through an intuitive web interface.
 
+## 📱 Frontend Application Screenshots
+
+### ![Frontend Show 1](../images/frontend_show_1.png)
+**Main Application Interface** - Professional equipment residual analysis form with AMI branding. Features the comprehensive 18+ field equipment lease information form with modern UI design, form validation, and intuitive user experience. Shows the main data input interface for equipment valuation analysis.
+
+### ![Frontend Show 2](../images/frontend_show_2.png)
+**Form Processing and Progress Tracking** - Real-time progress tracking during long-running AI analysis (6-8+ minutes). Displays the progress bar, processing stages, and status updates as the system communicates with n8n workflows for comprehensive residual value calculations. Shows the user experience during async processing.
+
+### ![Frontend Show 3](../images/frontend_show_3.png)
+**Interactive Dashboard and Results** - Complete analysis results dashboard with 6-section presentation including charts, data visualization, and comprehensive export capabilities. Features the executive summary, inflation analysis, depreciation modeling, utilization insights, market comparisons, and processing overview with Excel and PDF export options.
+
 ## Overview
 
 The AMI Residuals Frontend is a sophisticated React-based application that integrates with n8n workflows to deliver advanced equipment residual value calculations. The platform handles complex financial analysis through an easy-to-use form interface and presents results in interactive dashboards with comprehensive export capabilities.
