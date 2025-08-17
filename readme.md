@@ -4,6 +4,10 @@ A comprehensive equipment residual value analysis platform built for Asset Manag
 
 ## 📦 API Request & Response Examples
 
+For complete API documentation, see the actual request and response files:
+- **Request Data**: [`request.json`](request.json) - Complete equipment data structure sent to n8n workflow
+- **Response Data**: [`response.json`](response.json) - Full analysis results returned by AI agents
+
 ### Request Packet
 
 The frontend sends equipment data to the n8n workflow via webhook:
