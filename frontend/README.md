@@ -17,6 +17,12 @@ A professional equipment residual value analysis platform built for Asset Manage
 
 The AMI Residuals Frontend is a sophisticated React-based application that integrates with n8n workflows to deliver advanced equipment residual value calculations. The platform handles complex financial analysis through an easy-to-use form interface and presents results in interactive dashboards with comprehensive export capabilities.
 
+### 🌐 Live Application
+
+**Try the application live**: [AMI Residual Analysis Platform](https://ami-residual-agent.replit.app/)
+
+Experience the complete equipment residual value analysis system with real-time AI-powered calculations and comprehensive reporting capabilities.
+
 ## Key Features
 
 ### 🎯 Core Functionality

@@ -159,6 +159,12 @@ agentic-residual-analysis/
 
 The frontend is a sophisticated React application built with modern tooling and designed for deployment on Replit.
 
+### 🌐 Live Application
+
+**Try the application live**: [AMI Residual Analysis Platform](https://ami-residual-agent.replit.app/)
+
+Experience the complete equipment residual value analysis system with real-time AI-powered calculations and comprehensive reporting capabilities.
+
 ### Prerequisites
 - Node.js 18+
 - PostgreSQL database (Neon recommended)
