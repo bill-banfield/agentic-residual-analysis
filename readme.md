@@ -2,6 +2,10 @@
 
 A comprehensive equipment residual value analysis platform built for Asset Management International (AMI). This project combines a modern React frontend with n8n workflow automation to deliver AI-powered equipment valuation and financial analysis.
 
+## 🚀 Quick Start
+
+**New to the project?** Start with our [Project Setup Guide](Project_Setup.md) for step-by-step instructions on configuring the n8n environment and Google credentials.
+
 ## 📦 API Request & Response Examples
 
 For complete API documentation, see the actual request and response files:
